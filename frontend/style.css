@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+.chatbox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.chat-log {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+.chat-log div {
+    margin: 5px 0;
+}
