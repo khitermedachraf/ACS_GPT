@@ -1,12 +1,14 @@
 body {
     background-color: #f8f9fa;
 }
+
 .chatbox {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .chat-log {
     max-height: 300px;
     overflow-y: auto;
@@ -15,6 +17,40 @@ body {
     background: #e9ecef;
     border-radius: 8px;
 }
+
 .chat-log div {
     margin: 5px 0;
+}
+
+.thinking {
+    font-style: italic;
+    color: gray;
+}
+
+#logo {
+    height: 50px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .chatbox {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .chat-log {
+    background: #444;
+}
+
+.custom-control-label::before {
+    background-color: #6c757d;
+}
+
+.thinking img {
+    width: auto; /* Ensures the aspect ratio is maintained */
+    height: 28px; /* Adjust height as needed */
+    display: inline-block; /* Ensures the image is properly displayed inline */
 }

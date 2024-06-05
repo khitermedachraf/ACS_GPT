@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACS_GPT - Automated Customer Support</title>
+    <title>Automated Customer Support</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5">ACS_GPT</h1>
-        <h2 class="mt-5">Automated Customer Support</h2>
-        <div class="chatbox mt-4">
+        <div class="d-flex mt-5">
+            <img src="logo.png" alt="Logo" id="logo" class="img-fluid" style="height: 75px;">
+            <div class="mx-5 d-flex justify-content-between align-items-center">
+            <h1>ACS_GPT </h1> <p class="mx-2 align-self-end">By <b>Achraf KHITER</b></p>
+            </div>
+        </div>
+        <br>
+        <h2 class="text-center"> <u>A</u>utomated <u>C</u>ustomer <u>S</u>upport</h2>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkModeToggle" role="button">
+            <label class="custom-control-label" for="darkModeToggle" role="button">Dark Mode</label>
+        </div>
+        <div class="chatbox my-5">
             <div id="chat-log" class="chat-log"></div>
             <div class="input-group mb-3">
-                <input type="text" id="user-input" class="form-control" placeholder="Type your question here...">
+                <input type="text" id="user-input" class="form-control form-control-lg" placeholder="Type your question here...">
                 <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" onclick="sendMessage()">Send</button>
+                    <button class="btn btn-lg btn-outline-success" type="button" onclick="sendMessage()">Send</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
